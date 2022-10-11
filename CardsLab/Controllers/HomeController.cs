@@ -18,36 +18,24 @@ namespace CardsLab.Controllers
             HttpClient web = new HttpClient();
             web.BaseAddress = new Uri("https://www.deckofcardsapi.com/");
             var connection = await web.GetAsync("api/deck/new/shuffle/?deck_count=1");
+            CardResponse res = await connection.Content.ReadAsAsync<CardResponse>();
 
-            try
-            {
-                CardResponse res = await connection.Content.ReadAsAsync<CardResponse>();
-                return View(res);
-            }
-            catch (Exception e)
-            {
-                return View();
-            }
+            var connectionDraw = await web.GetAsync($"api/deck/{res.deck_id}/draw/?count=5");
+
+            res = await connectionDraw.Content.ReadAsAsync<CardResponse>();
+
+            return View(res.cards);
+
+            //try
+            //{
+            //    CardResponse res = await connection.Content.ReadAsAsync<CardResponse>();
+            //    return View();
+            //}
+            //catch (Exception e)
+            //{
+            //    return View();
+            //}
         }
-
-
-        public async Task<IActionResult> Draw()
-        {
-            HttpClient web = new HttpClient();
-            web.BaseAddress = new Uri("https://www.deckofcardsapi.com/");
-            var connection = await web.GetAsync("api/deck/tlocoh5289tn/draw/?count=5");
-
-            try
-            {
-                List<Card> cards = await connection.Content.ReadAsAsync<List<Card>>();
-                return View(cards);
-            }
-            catch (Exception e)
-            {
-                return View();
-            }
-        }
-
 
 
         public IActionResult Privacy()

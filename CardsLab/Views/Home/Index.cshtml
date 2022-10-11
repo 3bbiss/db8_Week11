@@ -1,4 +1,5 @@
-﻿@model CardResponse
+﻿@*@model CardResponse*@
+@model List<Card>
 @{
     ViewData["Title"] = "Home Page";
 }
@@ -8,6 +9,11 @@
 </div>
 
 
-<div>
-    The ID of the Deck is: @Model.deck_id
+@*<div>
+    The ID of the Deck is: @Model
 </div>
+*@
+
+@foreach (Card card in Model){
+    <img src="@card.image">
+}
