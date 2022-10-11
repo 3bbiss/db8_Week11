@@ -1,0 +1,12 @@
+﻿@model List<Card>
+@{
+    ViewData["Title"] = "Draw";
+}
+
+<h1>Here are your cards drawn!</h1>
+
+@foreach(Card card in Model){
+    <div>
+        <img src="@card.image"> <br/>
+    </div>
+}
