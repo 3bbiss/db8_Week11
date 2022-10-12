@@ -1,0 +1,24 @@
+﻿@model CardResponse
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+
+    <div>
+        <a href="/">Start new Game</a>
+    </div>
+
+    <div>@Model.remaining cards left! @Model.deck_id </div>
+
+    @foreach (Card card in Model.cards){
+        <img src="@card.image" />
+    }
+
+    <div>
+        <a href="/home/drawfive?deck_id=@Model.deck_id">Draw Five More</a>
+    </div>
+
+
+</div>
