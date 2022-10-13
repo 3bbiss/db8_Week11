@@ -4,7 +4,7 @@
     {
         public string title { get; set; }
         public int release_date { get; set; }
-        public List<string> people { get; set; }
+        public List<string> characters { get; set; }
         public List<string> starships { get; set; }
     }
 
@@ -16,7 +16,6 @@
     public class StarshipResponse
     {
         public string name { get; set; }
-        public string model { get; set; }
     }
 
 
@@ -37,5 +36,43 @@
 
             return _web;
         }
+
+        public static async Task<Movie> FindMovie(int num)
+        {
+            HttpClient web = GetHttpClient();
+            var connection = await web.GetAsync($"films/{num}/");
+            FilmResponse resp = await connection.Content.ReadAsAsync<FilmResponse>();
+
+            Movie movie = new Movie();
+            movie.title = resp.title;
+            movie.year = resp.release_date;
+
+            //web = GetHttpClient();
+            //connection = await web.GetAsync($"");
+
+
+            foreach (string person in resp.characters)
+            {
+                PeopleResponse per = new PeopleResponse();
+                per.name = person;
+                movie.characters.Add(per.name);
+            }
+
+            foreach (string starship in resp.starships)
+            {
+                StarshipResponse ship = new StarshipResponse();
+                ship.name = starship;
+                movie.ships.Add(ship.name);
+            }
+
+
+        }
+
+
+
     }
+
+
+
+
 }
