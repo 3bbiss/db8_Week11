@@ -47,6 +47,8 @@
             movie.title = resp.title;
             movie.year = resp.release_date;
 
+            // Do i actually need to create a new connection for the Characters and Starships?
+            // Wondering because I can extract their characters and starships from the movie api and insert them into lists, right?
             //web = GetHttpClient();
             //connection = await web.GetAsync($"");
 
@@ -65,14 +67,8 @@
                 movie.ships.Add(ship.name);
             }
 
-
+            return movie;
         }
 
-
-
     }
-
-
-
-
 }
