@@ -9,9 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XkcdMvc", "..\..\Week11Old\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XkcdConsole", "..\..\Week11Old\XkcdConsole\XkcdConsole\XkcdConsole.csproj", "{84DB062F-4271-46FC-B954-E625B99CD388}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CardsLabDemo", "CardsLabDemo\CardsLabDemo.csproj", "{B829E63C-59BB-4A1D-BA89-1BE46F5A0D47}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CardsLabDemo", "CardsLabDemo\CardsLabDemo.csproj", "{B829E63C-59BB-4A1D-BA89-1BE46F5A0D47}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokerGame", "PokerGame\PokerGame.csproj", "{26C7591A-9A00-4512-B720-47E249796417}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PokerGame", "PokerGame\PokerGame.csproj", "{26C7591A-9A00-4512-B720-47E249796417}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Starwars", "Starwars\Starwars.csproj", "{2EA0BAFA-7884-401E-B0A9-C963265667BD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{26C7591A-9A00-4512-B720-47E249796417}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{26C7591A-9A00-4512-B720-47E249796417}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{26C7591A-9A00-4512-B720-47E249796417}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2EA0BAFA-7884-401E-B0A9-C963265667BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EA0BAFA-7884-401E-B0A9-C963265667BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EA0BAFA-7884-401E-B0A9-C963265667BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EA0BAFA-7884-401E-B0A9-C963265667BD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
