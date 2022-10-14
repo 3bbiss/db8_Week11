@@ -18,6 +18,14 @@ namespace Starwars.Controllers
             return View();
         }
 
+
+        public async Task<IActionResult> FilmDetails(int id)
+        {
+            Movie movie = await MovieAPI.FindMovie(id);
+            return View(movie);
+        }
+
+
         public IActionResult Privacy()
         {
             return View();

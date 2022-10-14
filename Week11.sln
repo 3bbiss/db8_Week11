@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CardsLabDemo", "CardsLabDem
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PokerGame", "PokerGame\PokerGame.csproj", "{26C7591A-9A00-4512-B720-47E249796417}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Starwars", "Starwars\Starwars.csproj", "{2EA0BAFA-7884-401E-B0A9-C963265667BD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Starwars", "Starwars\Starwars.csproj", "{2EA0BAFA-7884-401E-B0A9-C963265667BD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StarWarsDemo", "StarWarsDemo\StarWarsDemo.csproj", "{D6CB203A-B99D-453A-898B-9AE3F483FAB4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{2EA0BAFA-7884-401E-B0A9-C963265667BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2EA0BAFA-7884-401E-B0A9-C963265667BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2EA0BAFA-7884-401E-B0A9-C963265667BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6CB203A-B99D-453A-898B-9AE3F483FAB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6CB203A-B99D-453A-898B-9AE3F483FAB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6CB203A-B99D-453A-898B-9AE3F483FAB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6CB203A-B99D-453A-898B-9AE3F483FAB4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
